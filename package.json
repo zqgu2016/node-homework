@@ -13,7 +13,9 @@
     "u1task2": "npm run clean && node src/unit1/task2.js",
     "u1task3": "npm run clean && nodemon --exec babel-node -- src/unit1/task3.js",
     "u2task1": "nodemon --exec babel-node -- src/unit2/task1.js",
-    "u2task2": "nodemon --exec babel-node -- src/unit2/task2.js"
+    "u2task2": "nodemon --exec babel-node -- src/unit2/task2.js",
+    "u3task1": "nodemon --exec babel-node -- src/unit3/task1",
+    "u3task2": "nodemon --exec babel-node -- src/unit3/task2"
   },
   "author": "",
   "license": "ISC",
@@ -21,7 +23,11 @@
     "csvtojson": "^2.0.10",
     "express": "^4.17.1",
     "express-joi-validation": "^5.0.0",
+    "express-promise-router": "^4.1.0",
     "joi": "^17.4.0",
+    "pg": "^8.6.0",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^6.6.2",
     "uuid": "^8.3.2"
   },
   "prettier": {

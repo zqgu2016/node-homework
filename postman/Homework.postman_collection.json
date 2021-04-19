@@ -11,7 +11,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:3000/api/users?loginSubstring=user1&limit=10",
+					"raw": "localhost:3000/api/users?loginSubstring=user10&limit=10",
 					"host": [
 						"localhost"
 					],
@@ -23,32 +23,12 @@
 					"query": [
 						{
 							"key": "loginSubstring",
-							"value": "user1"
+							"value": "user10"
 						},
 						{
 							"key": "limit",
 							"value": "10"
 						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "localhost:3000/api/users/28181344-610c-434c-b47a-491931e973e6",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "localhost:3000/api/users/ec71e4c3-0f64-44d5-966f-c2ca1d81b460",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"api",
-						"users",
-						"ec71e4c3-0f64-44d5-966f-c2ca1d81b460"
 					]
 				}
 			},
@@ -83,7 +63,7 @@
 			"response": []
 		},
 		{
-			"name": "localhost:3000/api/users/ec71e4c3-0f64-44d5-966f-c2ca1d81b460",
+			"name": "localhost:3000/api/users/:userId",
 			"request": {
 				"method": "PUT",
 				"header": [],
@@ -97,7 +77,7 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:3000/api/users/ec71e4c3-0f64-44d5-966f-c2ca1d81b460",
+					"raw": "localhost:3000/api/users/{{userId}}",
 					"host": [
 						"localhost"
 					],
@@ -105,7 +85,47 @@
 					"path": [
 						"api",
 						"users",
-						"ec71e4c3-0f64-44d5-966f-c2ca1d81b460"
+						"{{userId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/users/:userId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/users/{{userId}}",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"{{userId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/users/:userId",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/users/{{userId}}",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"{{userId}}"
 					]
 				}
 			},
