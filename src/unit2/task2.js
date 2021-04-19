@@ -22,7 +22,9 @@ const createOrUpdateSchema = Joi.object({
   password: Joi.string()
     .pattern(/^(?=.*[a-zA-Z])(?=.*[0-9])/)
     .required()
-    .message('password must contain letters and numbers;'),
+    .messages({
+      'string.pattern': 'password must contain letters and numbers;'
+    }),
   age: Joi.number()
     .min(4)
     .max(130)
