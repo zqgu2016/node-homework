@@ -16,7 +16,9 @@
     "u2task2": "nodemon --exec babel-node -- src/unit2/task2.js",
     "u3task1": "nodemon --exec babel-node -- src/unit3/task1",
     "u3task2": "nodemon --exec babel-node -- src/unit3/task2",
-    "u4task1": "nodemon --exec babel-node -- src/unit4/task1"
+    "u4task1": "nodemon --exec babel-node -- src/unit4/task1",
+    "u4task2": "nodemon --exec babel-node -- src/unit4/task2",
+    "u4task3": "nodemon --exec babel-node -- src/unit4/task3"
   },
   "author": "",
   "license": "ISC",

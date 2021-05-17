@@ -9,3 +9,18 @@ export const initUsers = () => {
     isDeleted: false
   }));
 };
+
+export const initGroups = () => {
+  return [
+    {
+      id: uuidv4(),
+      name: 'group0',
+      permissions: ['READ', 'WRITE', 'DELETE']
+    },
+    {
+      id: uuidv4(),
+      name: 'group1',
+      permissions: ['SHARE', 'UPLOAD_FILES']
+    }
+  ];
+};
